@@ -1,0 +1,26 @@
+{
+  "product": "VALLIS-3C",
+  "version": "1.6.0",
+  "architecture": "final_hv",
+  "artifacts": {
+    "descriptor_metadata.json": {
+      "size_bytes": 2182,
+      "sha256": "a035f842f137d8213cfbdacdfa37898a06eb9d1c23df2c5005b37b6e4382c584"
+    }
+  },
+  "textures": {
+    "directory": "../textures",
+    "index": "texture_index.csv",
+    "manifest": "texture_manifest.json",
+    "parts": [
+      "phase_texture_part01.h5",
+      "phase_texture_part02.h5",
+      "phase_texture_part03.h5",
+      "phase_texture_part04.h5",
+      "phase_texture_part05.h5",
+      "phase_texture_part06.h5",
+      "phase_texture_part07.h5",
+      "phase_texture_part08.h5"
+    ]
+  }
+}

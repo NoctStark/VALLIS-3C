@@ -1,0 +1,25 @@
+{
+  "captured_at_utc": "2026-09-22T23:55:51.477099+00:00",
+  "generated_by": "Joel D. Cruz-Arguelles",
+  "python": {
+    "implementation": "CPython",
+    "version": "3.12.10"
+  },
+  "operating_system": "Windows",
+  "platform_release": "Windows-11-10.0.26200-SP0",
+  "architecture": "AMD64",
+  "packages": {
+    "numpy": "2.5.3",
+    "scipy": "1.17.1",
+    "pandas": "3.0.5",
+    "matplotlib": "3.10.7",
+    "PyQt6": "6.10.2",
+    "joblib": "1.6.0",
+    "scikit-learn": "1.8.0",
+    "h5py": "3.16.0",
+    "pyproj": "3.7.2",
+    "shapely": "2.1.2"
+  },
+  "requirements_sha256": "42e04382e313ac8145d032afe7147610d2c186002de0fe14eecf1e97f8f85070",
+  "purpose": "Reproducible loading and execution of the serialized VALLIS-3C 1.6.0 scientific artifacts."
+}

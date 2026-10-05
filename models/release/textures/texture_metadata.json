@@ -1,0 +1,40 @@
+{
+  "format": "VALLIS-3C compact Morlet temporal texture",
+  "version": "1.6.0",
+  "source_artifact": {
+    "file": "morlet_temporal_texture_3c_compact.h5",
+    "sha256": "2f915928ee00baea373161254a3a8df280f92d1e3144368133acc384e7f9e38d",
+    "record_count": 2226
+  },
+  "release_artifact": {
+    "manifest": "texture_manifest.json",
+    "record_count": 1629,
+    "selection": "union of records reachable by full, oos_2017 and oos_2012_2017 selectors"
+  },
+  "contents": [
+    "component_names",
+    "frequency_hz",
+    "quantile_probabilities",
+    "subquantile_unit_edges",
+    "quantile_time_s",
+    "quantile_time_rel_q50_s",
+    "band_energy",
+    "entropy_H",
+    "concentration_C2",
+    "concentration_C2_rate_per_s",
+    "Pmax_rel",
+    "band_energy_valid",
+    "subquantile_local_probability",
+    "interval_probability_mass",
+    "interval_duration_s",
+    "interval_valid",
+    "component_available",
+    "component_mass_check_pass",
+    "component_max_interval_mass_error"
+  ],
+  "integrity": {
+    "status": "PASS",
+    "maximum_local_probability_sum_error": 4.845830425814768e-08,
+    "maximum_interval_mass_error": 5.551115123125783e-17
+  }
+}

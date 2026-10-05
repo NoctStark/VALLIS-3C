@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "release_date": "2026-10-03",
+  "release": "VALLIS-3C 1.6.0",
+  "scope": "oos2012",
+  "files": [
+    {
+      "name": "network_metrics_bootstrap_summary.csv",
+      "size_bytes": 1578,
+      "sha256": "1634e3e9917899bfd40600b6e0b768b67ea0103878a48e7113f52ffc4df6f257"
+    },
+    {
+      "name": "network_metrics.csv",
+      "size_bytes": 51482,
+      "sha256": "2569c505314c55b6226bc1af1e543e0a327ac100b66fb09b380b23d87e04cb18"
+    },
+    {
+      "name": "README.md",
+      "size_bytes": 1668,
+      "sha256": "b3a191e573ef0866498774a045fa4da8f68b2f2c8286b0009c2e908ed8c9c7c6"
+    }
+  ]
+}

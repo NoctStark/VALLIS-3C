@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "release_date": "2026-10-03",
+  "release": "VALLIS-3C 1.6.0",
+  "scope": "duration_model",
+  "files": [
+    {
+      "name": "duration_baseline_study_eventwise_oof.csv",
+      "size_bytes": 11772,
+      "sha256": "a550d722cbcc93367f1c5d71a86638842fa53d5dfd7f007fa8e1c0cd29440bcb"
+    },
+    {
+      "name": "duration_baseline_study_paired_comparisons.csv",
+      "size_bytes": 552,
+      "sha256": "db8ec08edb60eac8f3125f04c101c1ac5af4fd5d2df3fea565173d571cc66d91"
+    },
+    {
+      "name": "duration_baseline_study_recordwise_oof.csv",
+      "size_bytes": 638891,
+      "sha256": "bda28abbd8d840643b19010f170a0a45d3e20c437f04b4ee4a6f04a6accb2ec7"
+    },
+    {
+      "name": "duration_baseline_study_residual_trends.csv",
+      "size_bytes": 544,
+      "sha256": "d8ea57383856d8ab85c79ffda48f39a433dab1f905a5a3d2212b55036fe37a20"
+    },
+    {
+      "name": "duration_baseline_study_summary.csv",
+      "size_bytes": 1688,
+      "sha256": "67884f2c0e2547c230f554456a8230bdff6b59b938b59253c02c19e9f15aa135"
+    },
+    {
+      "name": "duration_oof_summary.csv",
+      "size_bytes": 163,
+      "sha256": "b933010e05a52e7e72879cde2e2f78a672f3aabac05be438a191382e04a627f9"
+    },
+    {
+      "name": "README.md",
+      "size_bytes": 2328,
+      "sha256": "24e6c75979c10a63847cddcb94c0a45b485aa5d09e5df2aebdb2991c23323524"
+    }
+  ]
+}

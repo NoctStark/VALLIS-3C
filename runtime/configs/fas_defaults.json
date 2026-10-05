@@ -1,0 +1,19 @@
+{
+  "fas_input_mode": "model",
+  "fas_variability_source": "surface_hybrid",
+  "fas_detail_strength": 1.0,
+  "fas_residual": true,
+  "fas_residual_scale": 1.0,
+  "fas_resonance_texture": true,
+  "fas_resonance_texture_site_strength": 1.0,
+  "fas_resonance_texture_residual": true,
+  "fas_resonance_texture_residual_scale": 1.0,
+  "fas_event_mode": "independent_realization",
+  "fas_mean_mode": "default",
+  "fas_site_mode": "ts_only",
+  "fas_broad_strength": 1.0,
+  "fas_split_decades": 0.18,
+  "fas_empirical_on_exact_input": false,
+  "fas_donor_k": 30,
+  "fas_donor_source_match": true
+}

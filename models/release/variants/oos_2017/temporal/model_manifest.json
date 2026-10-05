@@ -1,0 +1,25 @@
+{
+  "product_version": "1.6.0",
+  "engine_family": "VALLIS-3C",
+  "architecture": "final_hv",
+  "variant": "oos2017",
+  "excluded_events": [
+    "2017-09-19"
+  ],
+  "required_files": [
+    "selector_portable.npz",
+    "duration_clock_final_hv_portable.npz",
+    "duration_clock_final_hv_manifest.json",
+    "duration_support.csv",
+    "hf_vertical_clock_exactbank_5_15.csv",
+    "catalog.csv"
+  ],
+  "texture_selector": {
+    "artifact": "selector_portable.npz",
+    "training_records": 1568,
+    "training_events": 41,
+    "min_samples_leaf": 3
+  },
+  "vertical_policy": "unified H/V target + observed donor ratio bank; one-sided only",
+  "inactive_artifacts": false
+}

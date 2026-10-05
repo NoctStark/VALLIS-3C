@@ -1,0 +1,117 @@
+{
+  "software": "VALLIS-3C",
+  "version": "1.6.0",
+  "repository": "https://github.com/NoctStark/VALLIS-3C",
+  "build": "1.6.0",
+  "release_status": "stable",
+  "license": "GPL-3.0-only",
+  "copyright": "Copyright (C) 2026 Joel D. Cruz-Arguelles",
+  "license_file": "LICENSE",
+  "data_provenance": "DATA_PROVENANCE.md",
+  "third_party_notices": "THIRD_PARTY_NOTICES.md",
+  "scientific_disclaimer": "DISCLAIMER.md",
+  "citation_file": "CITATION.cff",
+  "archive_metadata": ".zenodo.json",
+  "self_contained": true,
+  "architecture": "final_hv",
+  "method": "transport_complex",
+  "carrier": "phase_diffusion",
+  "texture_selector_artifact": "selector_portable.npz",
+  "texture_selector_min_samples_leaf": 3,
+  "carrier_representation": "vallis3c.phase_diffusion.texture_carrier.v1",
+  "acceleration_sample_arrays_distributed": false,
+  "default_variant": "full",
+  "directories": {
+    "application": "app",
+    "configuration": "config",
+    "runtime": "runtime/vallis3c_runtime",
+    "spectral_core": "spectral_core/src/gm_parametric_3c",
+    "models": "models/release",
+    "empirical_fas": "models/release/empirical_fas",
+    "outputs": "outputs"
+  },
+  "variants": {
+    "full": {
+      "directory": "models/release/variants/full",
+      "excluded_events": []
+    },
+    "oos_2017": {
+      "directory": "models/release/variants/oos_2017",
+      "excluded_events": [
+        "2017-09-19"
+      ]
+    },
+    "oos_2012_2017": {
+      "directory": "models/release/variants/oos_2012_2017",
+      "excluded_events": [
+        "2012-03-20",
+        "2017-09-19"
+      ]
+    }
+  },
+  "active_temporal_artifact": "duration_clock_final_hv_portable.npz",
+  "vertical_clock_bank": "hf_vertical_clock_exactbank_5_15.csv",
+  "vertical_clock_band_indices": [
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38
+  ],
+  "vertical_clock_band_centers_hz": [
+    5.492918653486337,
+    6.250659623693111,
+    7.11292997329739,
+    8.094149393970646,
+    9.210726755059568,
+    10.48133450805415,
+    11.927220944794634,
+    13.572565531291108
+  ],
+  "vertical_clock_frequency_range_hz": [
+    5.492918653486337,
+    13.572565531291108
+  ],
+  "default_zero_padding_s": 20.0,
+  "fas_smoothing_output_points": 320,
+  "fas_smoothing_output_spacing": "logarithmic",
+  "structural_texture_library": "models/release/textures",
+  "windows_launcher": "VALLIS-3C.cmd",
+  "windows_dependency_installer": "INSTALL_VALLIS.cmd",
+  "windows_private_environment": "%LOCALAPPDATA%\\VALLIS-3C\\1.6.0\\venv",
+  "supported_python": "64-bit CPython >=3.12,<3.15",
+  "reference_python": "CPython 3.12.10",
+  "python_requirements": "requirements.txt",
+  "record_usage_manifest": "validation/model_training_usage_manifest.csv",
+  "record_usage_codes": {
+    "F": "spectral/site-FAS population including persistent local spectral departure",
+    "C": "CU reference-FAS calibration",
+    "R": "Major/Intermediate and Vertical/EAS spectral-ratio calibration; multi-station events only",
+    "S": "ExtraTrees time-frequency selector training population",
+    "T": "production-eligible time-frequency texture donor population",
+    "D": "unified horizontal and vertical duration-model calibration population"
+  },
+  "temporal_population_counts": {
+    "distributed_texture_records_union": 1629,
+    "selector_training_records": 1623,
+    "selector_training_events": 42,
+    "oos2017_selector_training_records": 1568,
+    "oos2017_selector_training_events": 41,
+    "oos2012_2017_selector_training_records": 1515,
+    "oos2012_2017_selector_training_events": 40,
+    "production_texture_donor_records": 1623,
+    "production_texture_donor_events": 42,
+    "duration_clock_records": 1623,
+    "duration_clock_events": 42,
+    "default_complete_donor_only": true
+  },
+  "orcid": "0009-0002-6878-0173",
+  "raw_ground_motion_recordings_distributed": false,
+  "ground_motion_sources": [
+    "RAII-UNAM",
+    "RACM/CIRES"
+  ]
+}

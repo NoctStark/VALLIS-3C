@@ -1,0 +1,7 @@
+{
+  "name": "VALLIS-3C",
+  "source_policy": "Runtime assets only.",
+  "application_logo": "VALLIS-3C_512.png",
+  "application_logo_size_px": 512,
+  "windows_ico": "VALLIS-3C.ico"
+}

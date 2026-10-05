@@ -1,0 +1,94 @@
+{
+  "artifact": "empirical_fas_library.npz",
+  "format": "vallis3c.empirical_fas_library",
+  "format_version": "1.0",
+  "sha256": "234a6f04c41d6c682c8b2f398f89c7e91355e6a1a9df02fc10fb1de3add3ecf3",
+  "bytes": 58629273,
+  "storage": "NumPy NPZ with ZIP compression",
+  "numeric_dtype": "float64",
+  "fidelity": "Every field consumed by the runtime is stored without resampling, interpolation, rounding, or numeric dtype reduction. Identifier and Boolean fields retain their logical values; source-only columns that are not read by the runtime are omitted.",
+  "contents": {
+    "empirical_index_columns": [
+      "event_id",
+      "station_id",
+      "Mw",
+      "Rrup_km",
+      "depth_used_km",
+      "Ts_s",
+      "source_type",
+      "event_longitude",
+      "event_latitude",
+      "x_conditioned_km",
+      "y_conditioned_km",
+      "texture_usable_3c",
+      "record_observed",
+      "texture_hdf5"
+    ],
+    "phase_timing": [
+      "event_id",
+      "station_id",
+      "t1_H_local_s"
+    ],
+    "horizontal_envelope_audit": [
+      "event_id",
+      "station_id",
+      "rho_envelope"
+    ],
+    "fas_tables": {
+      "h_obs": "fas_observed.csv",
+      "h_smooth": "fas_smooth.csv",
+      "v_obs": "fas_observed_vertical.csv",
+      "v_smooth": "fas_smooth_vertical.csv"
+    },
+    "fas_units": "cm/s",
+    "frequency_units": "Hz"
+  },
+  "source_files": {
+    "empirical_texture_index.csv": {
+      "sha256": "6a1b4f64ca8869dc141287d0a4b58cd42a6be5da0a57b74ba633e2beac726ab0",
+      "rows": 2225,
+      "columns": 122,
+      "bytes": 4901947
+    },
+    "phase_texture_timing.csv": {
+      "sha256": "519aa1527c25952f7e5c8e354a1b03a80fcea1ca0808b6e99b5429da0d08ea06",
+      "rows": 2196,
+      "columns": 3,
+      "bytes": 52658
+    },
+    "horizontal_component_audit.csv": {
+      "sha256": "53ece4a1881c84293e472d64225e7b2ebbb347f3ff8e985f8bc3a2c10cc98f3c",
+      "rows": 2225,
+      "columns": 3,
+      "bytes": 79741
+    },
+    "fas_observed.csv": {
+      "sha256": "fbbd764315a67409e90919dbac790006ea3fcdd41435fc6aaffcb9efca7737de",
+      "rows": 2225,
+      "columns": 1026,
+      "bytes": 42359110
+    },
+    "fas_smooth.csv": {
+      "sha256": "7bcb78b6ac9e96c024f245513e42805cbd26a69a45d2b1f35e598fd26da5d625",
+      "rows": 3197,
+      "columns": 1026,
+      "bytes": 60854167
+    },
+    "fas_observed_vertical.csv": {
+      "sha256": "41e73e769eff4dc98b081ea094edd2bb8acb47393659e1c4f8283680e5895293",
+      "rows": 2225,
+      "columns": 514,
+      "bytes": 21263366
+    },
+    "fas_smooth_vertical.csv": {
+      "sha256": "cdb29b641f94986a840166a2def71dcb784ca23fb3cf686b977d60a2637e514a",
+      "rows": 2225,
+      "columns": 514,
+      "bytes": 21240265
+    }
+  },
+  "validation": {
+    "status": "PASS",
+    "method": "Every stored array was reloaded with allow_pickle=False and compared exactly."
+  }
+}

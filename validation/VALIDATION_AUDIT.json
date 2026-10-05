@@ -1,0 +1,130 @@
+{
+  "status": "PASS",
+  "release": "VALLIS-3C 1.6.0",
+  "integrity": {
+    "01_spectral_model": {
+      "status": "PASS",
+      "files_hashed": 10
+    },
+    "02_duration_model": {
+      "status": "PASS",
+      "files_hashed": 8
+    },
+    "03_oos_2017": {
+      "status": "PASS",
+      "files_hashed": 12
+    },
+    "04_oos_2012": {
+      "status": "PASS",
+      "files_hashed": 4
+    },
+    "05_sasid": {
+      "status": "PASS",
+      "files_hashed": 20
+    }
+  },
+  "local_paths": {
+    "status": "PASS",
+    "machine_local_path_hits": 0
+  },
+  "npz_metadata": {
+    "status": "PASS",
+    "files_checked": 3,
+    "array_counts": {
+      "03_oos_2017/oos2017_generated_ground_motions.npz": 12,
+      "05_sasid/figure9_normalized_arias.npz": 15,
+      "05_sasid/figure9_representative_ground_motions.npz": 35
+    }
+  },
+  "csv_tables": {
+    "status": "PASS",
+    "files_parsed": 41,
+    "row_counts": {
+      "model_training_usage_manifest.csv": 2224,
+      "01_spectral_model/benchmark_summary.csv": 5,
+      "01_spectral_model/cu_eventwise_loeo_baselines.csv": 1020,
+      "01_spectral_model/cu_loeo_paired_comparisons.csv": 20,
+      "01_spectral_model/cu_loeo_residual_trends.csv": 6,
+      "01_spectral_model/cu_loeo_summary.csv": 90,
+      "01_spectral_model/eventwise_metrics.csv": 136,
+      "01_spectral_model/external_gmpe_paired_comparisons.csv": 5,
+      "01_spectral_model/site_amplification_loso.csv": 3,
+      "02_duration_model/duration_baseline_study_eventwise_oof.csv": 126,
+      "02_duration_model/duration_baseline_study_paired_comparisons.csv": 4,
+      "02_duration_model/duration_baseline_study_recordwise_oof.csv": 4869,
+      "02_duration_model/duration_baseline_study_residual_trends.csv": 8,
+      "02_duration_model/duration_baseline_study_summary.csv": 18,
+      "02_duration_model/duration_oof_summary.csv": 2,
+      "03_oos_2017/AU46_spectral_curves.csv": 760,
+      "03_oos_2017/GC38_spectral_curves.csv": 760,
+      "03_oos_2017/network_metrics.csv": 413,
+      "03_oos_2017/network_metrics_bootstrap_summary.csv": 5,
+      "03_oos_2017/oos2017_durations.csv": 93,
+      "03_oos_2017/oos2017_spectral_all_realizations.csv": 70680,
+      "03_oos_2017/oos2017_spectral_summary.csv": 2280,
+      "03_oos_2017/station_hysteretic_energy_q3.csv": 153,
+      "03_oos_2017/TCYA_spectral_curves.csv": 760,
+      "04_oos_2012/network_metrics.csv": 378,
+      "04_oos_2012/network_metrics_bootstrap_summary.csv": 5,
+      "05_sasid/conditioned_SaT_scaling_factors_all_sites_sources_VALLIS.csv": 12240,
+      "05_sasid/duration_detail_sasid_vallis.csv": 480,
+      "05_sasid/duration_suite_summary.csv": 16,
+      "05_sasid/figure10_nonlinear_response.csv": 4896,
+      "05_sasid/figure8_response_spectra.csv": 8408,
+      "05_sasid/nested_duration_aggregate_summary.csv": 9,
+      "05_sasid/nested_duration_bootstrap_summary.csv": 9,
+      "05_sasid/nested_duration_summary.csv": 8,
+      "05_sasid/nonlinear_Umax_EH_percentiles_SASID_Q2_Q3_Q4.csv": 12240,
+      "05_sasid/nonlinear_Umax_EH_percentiles_VALLIS_Q2_Q3_Q4.csv": 12240,
+      "05_sasid/observed_event_level_nested_duration.csv": 116,
+      "05_sasid/representative_ground_motion_fas.csv": 10240,
+      "05_sasid/sasid_vallis_duration_pga.csv": 240,
+      "05_sasid/spectral_sigma_lnSa_summary.csv": 16,
+      "05_sasid/table2_summary.csv": 8
+    }
+  },
+  "cross_validation_consistency": {
+    "status": "PASS",
+    "spectral_benchmark_rows_recomputed": 5,
+    "spectral_cu_loeo_events": 68,
+    "spectral_cu_loeo_models": 3,
+    "duration_oof_sources_matched_to_runtime_manifest": 2,
+    "duration_recordwise_grouped_oof_predictions": 4869,
+    "oos2017_network_stations": 59,
+    "oos2017_network_metrics": 7,
+    "oos2017_bootstrap_metrics": 5,
+    "oos2012_network_stations": 54,
+    "oos2012_network_metrics": 7,
+    "oos2012_bootstrap_metrics": 5,
+    "sasid_site_source_cases": 8
+  },
+  "nonlinear_and_scaling": {
+    "status": "PASS",
+    "percentile_rows_per_method": 12240,
+    "statistics": [
+      "P05",
+      "P16",
+      "P50",
+      "P84",
+      "P95"
+    ],
+    "metrics": [
+      "Umax",
+      "EH_RMS"
+    ],
+    "Q": [
+      2,
+      3,
+      4
+    ],
+    "site_source_cases": 8,
+    "pairs_per_case": 30,
+    "periods_per_pair": 51,
+    "figure10_p50_consistent": true
+  },
+  "notes": [
+    "The strict 2017 station bootstrap supports duration transfer; hysteretic energy retains larger station-level error.",
+    "The strict 2012 station bootstrap uses the common 54-station support of the seven distributed metric tables.",
+    "Serialized runtime models are execution assets and are not treated as sole validation evidence."
+  ]
+}

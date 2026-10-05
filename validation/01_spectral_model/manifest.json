@@ -1,0 +1,53 @@
+{
+  "schema_version": 1,
+  "release_date": "2026-10-03",
+  "release": "VALLIS-3C 1.6.0",
+  "scope": "spectral_model",
+  "files": [
+    {
+      "name": "benchmark_summary.csv",
+      "size_bytes": 905,
+      "sha256": "77fbee94c0b6c6b86a7e565641640fe0dadb1096d6d264f2d1724762ff39a5d3"
+    },
+    {
+      "name": "cu_eventwise_loeo_baselines.csv",
+      "size_bytes": 115923,
+      "sha256": "ef9ec8bb130d1833d1ebf1bec3150fcd14346eecf253afd30c6e64582fc5049c"
+    },
+    {
+      "name": "cu_loeo_paired_comparisons.csv",
+      "size_bytes": 2425,
+      "sha256": "39ddf9e149e9868bdd39cb761de0ac3dbb6513cd943ea9320856b5adbaa81ced"
+    },
+    {
+      "name": "cu_loeo_residual_trends.csv",
+      "size_bytes": 407,
+      "sha256": "c1b73635a76b545bf11c560770f4f8ea47361ac40e2ae2a938078a57997e777b"
+    },
+    {
+      "name": "cu_loeo_summary.csv",
+      "size_bytes": 8789,
+      "sha256": "06f84a049dc2d59482bc77882cdade5b621914af166f482bd7bdeb1347c9cedd"
+    },
+    {
+      "name": "eventwise_metrics.csv",
+      "size_bytes": 10753,
+      "sha256": "970b923f1f9a160bdd9c619676c0db9ebc658daf4458d34eefb69d401ff329b4"
+    },
+    {
+      "name": "external_gmpe_paired_comparisons.csv",
+      "size_bytes": 680,
+      "sha256": "5831812264a0aa970d2e2e1ea5405d3673743904bc0ee69a8333ce9a1af1076f"
+    },
+    {
+      "name": "README.md",
+      "size_bytes": 3784,
+      "sha256": "a9ef31b435748967f221b3f1c0d4f0b8de2b13e2f3814e7e4a6ea64378976f3c"
+    },
+    {
+      "name": "site_amplification_loso.csv",
+      "size_bytes": 547,
+      "sha256": "3cde7431238e7d204c170decf122e33c41443f33a06900b103ee825cc12f7d2a"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "status": "PASS",
+  "selection": "both horizontal components observed_complete; source matched; Ts within +/-20%; each earthquake receives equal weight",
+  "aggregate": [
+    {
+      "metric": "D5-95/D5-75",
+      "method": "SASID",
+      "median_across_8_cases": 1.368178076384547,
+      "bootstrap_p025": 1.349351183728103,
+      "bootstrap_p975": 1.3793966041084071
+    },
+    {
+      "metric": "D5-95/D5-75",
+      "method": "VALLIS",
+      "median_across_8_cases": 2.021745382692676,
+      "bootstrap_p025": 1.9505415419931742,
+      "bootstrap_p975": 2.0914197196751405
+    },
+    {
+      "metric": "D5-95/D5-75",
+      "method": "Observed complete/event-balanced",
+      "median_across_8_cases": 2.027080173794495,
+      "bootstrap_p025": 1.9655707856382298,
+      "bootstrap_p975": 2.124617834548375
+    },
+    {
+      "metric": "D2.5-97.5/D5-95",
+      "method": "SASID",
+      "median_across_8_cases": 1.1787250791662758,
+      "bootstrap_p025": 1.1643081163373616,
+      "bootstrap_p975": 1.1953323024105063
+    },
+    {
+      "metric": "D2.5-97.5/D5-95",
+      "method": "VALLIS",
+      "median_across_8_cases": 1.2993507330239689,
+      "bootstrap_p025": 1.2656744408595941,
+      "bootstrap_p975": 1.3245579823545075
+    },
+    {
+      "metric": "D2.5-97.5/D5-95",
+      "method": "Observed complete/event-balanced",
+      "median_across_8_cases": 1.303432764089066,
+      "bootstrap_p025": 1.2810803483821362,
+      "bootstrap_p975": 1.3226739080458008
+    },
+    {
+      "metric": "D2.5-97.5/D5-75",
+      "method": "SASID",
+      "median_across_8_cases": 1.5921644859443536,
+      "bootstrap_p025": 1.5696490846466653,
+      "bootstrap_p975": 1.6041662506714651
+    },
+    {
+      "metric": "D2.5-97.5/D5-75",
+      "method": "VALLIS",
+      "median_across_8_cases": 2.629230483050071,
+      "bootstrap_p025": 2.513842400936068,
+      "bootstrap_p975": 2.734429602255523
+    },
+    {
+      "metric": "D2.5-97.5/D5-75",
+      "method": "Observed complete/event-balanced",
+      "median_across_8_cases": 2.6461219464247234,
+      "bootstrap_p025": 2.536552245909622,
+      "bootstrap_p975": 2.7795733910638956
+    }
+  ],
+  "case_counts": [
+    {
+      "site": "Parque Hundido",
+      "source": "Intraslab",
+      "observed_n": 60,
+      "observed_n_events": 15
+    },
+    {
+      "site": "Parque Hundido",
+      "source": "Interplate",
+      "observed_n": 80,
+      "observed_n_events": 12
+    },
+    {
+      "site": "Torre Mayor",
+      "source": "Intraslab",
+      "observed_n": 38,
+      "observed_n_events": 12
+    },
+    {
+      "site": "Torre Mayor",
+      "source": "Interplate",
+      "observed_n": 66,
+      "observed_n_events": 14
+    },
+    {
+      "site": "Zócalo",
+      "source": "Intraslab",
+      "observed_n": 173,
+      "observed_n_events": 17
+    },
+    {
+      "site": "Zócalo",
+      "source": "Interplate",
+      "observed_n": 220,
+      "observed_n_events": 17
+    },
+    {
+      "site": "Bosque S. J. Aragón",
+      "source": "Intraslab",
+      "observed_n": 54,
+      "observed_n_events": 12
+    },
+    {
+      "site": "Bosque S. J. Aragón",
+      "source": "Interplate",
+      "observed_n": 78,
+      "observed_n_events": 17
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "product": "VALLIS-3C",
+  "version": "1.6.0",
+  "architecture": "final_hv",
+  "variants": {
+    "full": {
+      "directory": "variants/full",
+      "spectral_model": "spectral_model.joblib",
+      "temporal": "temporal",
+      "spectral_sha256": "11fd63eb8bf9af7123d3a6707b1d1e053eb33fe4fb69b449761cee6765da9c35"
+    },
+    "oos_2017": {
+      "directory": "variants/oos_2017",
+      "spectral_model": "spectral_model.joblib",
+      "temporal": "temporal",
+      "spectral_sha256": "8f8948013c5b723ce8634e1a72589adb8b29e7d66befca6dd4f7791707918995"
+    },
+    "oos_2012_2017": {
+      "directory": "variants/oos_2012_2017",
+      "spectral_model": "spectral_model.joblib",
+      "temporal": "temporal",
+      "spectral_sha256": "2c8b6a7bbe2a0c21b6620ffa980d69a70ea1cff8125ae00ed8368b137609ba5f"
+    }
+  },
+  "runtime": "runtime/runtime_manifest.json",
+  "empirical_fas": "empirical_fas/manifest.json",
+  "textures": "textures/texture_manifest.json"
+}

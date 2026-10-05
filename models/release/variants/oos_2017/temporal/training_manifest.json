@@ -1,0 +1,348 @@
+{
+  "model": "VALLIS-3C complex transport conditional selector",
+  "release_architecture": "transport_complex",
+  "version": "1.6.0",
+  "variant": "oos2017",
+  "author": "Joel D. Cruz-Arguelles",
+  "institution": "Instituto de Ingeniería, Universidad Nacional Autónoma de México, Coyoacán, 04510 Ciudad de México, México",
+  "emails": [
+    "JCruzAr@iingen.unam.mx",
+    "joeldan.cruz@gmail.com"
+  ],
+  "orcid": "0009-0002-6878-0173",
+  "year": 2026,
+  "training_records": 1568,
+  "events": 41,
+  "sources": {
+    "INSLAB": 727,
+    "INTERPLATE": 841
+  },
+  "excluded_records": [
+    "1997-01-11__CU"
+  ],
+  "excluded_events": [
+    "2017-09-19"
+  ],
+  "training_configuration": {
+    "algorithm": "ExtraTreesRegressor",
+    "n_estimators_per_source": 128,
+    "min_samples_leaf": 3,
+    "max_features": 1.0,
+    "random_state": 916,
+    "bootstrap": false,
+    "criterion": "squared_error",
+    "event_balanced": true,
+    "separate_sources": true,
+    "target_standardization": "event_weighted_mean_std_within_source"
+  },
+  "feature_names": [
+    "Mw",
+    "ln_Rrup_km",
+    "depth_used_km",
+    "ln_Ts_s",
+    "x_conditioned_km",
+    "y_conditioned_km",
+    "event_longitude",
+    "event_latitude",
+    "ln_FAS_major_0.2Hz_cm_per_s",
+    "ln_FAS_major_0.279686699Hz_cm_per_s",
+    "ln_FAS_major_0.391123248Hz_cm_per_s",
+    "ln_FAS_major_0.54695985Hz_cm_per_s",
+    "ln_FAS_major_0.764886974Hz_cm_per_s",
+    "ln_FAS_major_1.06964356Hz_cm_per_s",
+    "ln_FAS_major_1.49582539Hz_cm_per_s",
+    "ln_FAS_major_2.09181232Hz_cm_per_s",
+    "ln_FAS_major_2.92526042Hz_cm_per_s",
+    "ln_FAS_major_4.09078215Hz_cm_per_s",
+    "ln_FAS_major_5.72068678Hz_cm_per_s",
+    "ln_FAS_major_8Hz_cm_per_s",
+    "ln_FAS_intermediate_0.2Hz_cm_per_s",
+    "ln_FAS_intermediate_0.279686699Hz_cm_per_s",
+    "ln_FAS_intermediate_0.391123248Hz_cm_per_s",
+    "ln_FAS_intermediate_0.54695985Hz_cm_per_s",
+    "ln_FAS_intermediate_0.764886974Hz_cm_per_s",
+    "ln_FAS_intermediate_1.06964356Hz_cm_per_s",
+    "ln_FAS_intermediate_1.49582539Hz_cm_per_s",
+    "ln_FAS_intermediate_2.09181232Hz_cm_per_s",
+    "ln_FAS_intermediate_2.92526042Hz_cm_per_s",
+    "ln_FAS_intermediate_4.09078215Hz_cm_per_s",
+    "ln_FAS_intermediate_5.72068678Hz_cm_per_s",
+    "ln_FAS_intermediate_8Hz_cm_per_s",
+    "ln_FAS_vertical_0.2Hz_cm_per_s",
+    "ln_FAS_vertical_0.279686699Hz_cm_per_s",
+    "ln_FAS_vertical_0.391123248Hz_cm_per_s",
+    "ln_FAS_vertical_0.54695985Hz_cm_per_s",
+    "ln_FAS_vertical_0.764886974Hz_cm_per_s",
+    "ln_FAS_vertical_1.06964356Hz_cm_per_s",
+    "ln_FAS_vertical_1.49582539Hz_cm_per_s",
+    "ln_FAS_vertical_2.09181232Hz_cm_per_s",
+    "ln_FAS_vertical_2.92526042Hz_cm_per_s",
+    "ln_FAS_vertical_4.09078215Hz_cm_per_s",
+    "ln_FAS_vertical_5.72068678Hz_cm_per_s",
+    "ln_FAS_vertical_8Hz_cm_per_s"
+  ],
+  "n_features_per_source": 44,
+  "spectral_nodes_hz": [
+    0.2,
+    0.27968669889939646,
+    0.3911232477062083,
+    0.5469598500688017,
+    0.7648869744812599,
+    1.0696435646190523,
+    1.49582538793643,
+    2.091812324409246,
+    2.925260418655477,
+    4.090782149574084,
+    5.7206867766547616,
+    8.0
+  ],
+  "targets": [
+    "ln_D2p5_97p5_major",
+    "ln_D2p5_97p5_intermediate",
+    "ln_D2p5_97p5_vertical",
+    "rel_t5_major",
+    "rel_t25_major",
+    "rel_t50_major",
+    "rel_t75_major",
+    "rel_t95_major",
+    "rel_t5_intermediate",
+    "rel_t25_intermediate",
+    "rel_t50_intermediate",
+    "rel_t75_intermediate",
+    "rel_t95_intermediate",
+    "rel_t5_vertical",
+    "rel_t25_vertical",
+    "rel_t50_vertical",
+    "rel_t75_vertical",
+    "rel_t95_vertical",
+    "persistence_major_0.2Hz_real",
+    "persistence_major_0.2Hz_imag",
+    "persistence_major_0.5Hz_real",
+    "persistence_major_0.5Hz_imag",
+    "persistence_major_1Hz_real",
+    "persistence_major_1Hz_imag",
+    "persistence_major_2Hz_real",
+    "persistence_major_2Hz_imag",
+    "persistence_major_4Hz_real",
+    "persistence_major_4Hz_imag",
+    "persistence_major_8Hz_real",
+    "persistence_major_8Hz_imag",
+    "persistence_intermediate_0.2Hz_real",
+    "persistence_intermediate_0.2Hz_imag",
+    "persistence_intermediate_0.5Hz_real",
+    "persistence_intermediate_0.5Hz_imag",
+    "persistence_intermediate_1Hz_real",
+    "persistence_intermediate_1Hz_imag",
+    "persistence_intermediate_2Hz_real",
+    "persistence_intermediate_2Hz_imag",
+    "persistence_intermediate_4Hz_real",
+    "persistence_intermediate_4Hz_imag",
+    "persistence_intermediate_8Hz_real",
+    "persistence_intermediate_8Hz_imag",
+    "persistence_vertical_0.2Hz_real",
+    "persistence_vertical_0.2Hz_imag",
+    "persistence_vertical_0.5Hz_real",
+    "persistence_vertical_0.5Hz_imag",
+    "persistence_vertical_1Hz_real",
+    "persistence_vertical_1Hz_imag",
+    "persistence_vertical_2Hz_real",
+    "persistence_vertical_2Hz_imag",
+    "persistence_vertical_4Hz_real",
+    "persistence_vertical_4Hz_imag",
+    "persistence_vertical_8Hz_real",
+    "persistence_vertical_8Hz_imag"
+  ],
+  "n_targets": 54,
+  "data_basis": "temporally eligible three-component texture population",
+  "portable_checks": {
+    "INSLAB": {
+      "n_records": 727,
+      "n_events": 18,
+      "n_nodes": 50976,
+      "stored_training_leaf_traversal_verified": true
+    },
+    "INTERPLATE": {
+      "n_records": 841,
+      "n_events": 23,
+      "n_nodes": 59380,
+      "stored_training_leaf_traversal_verified": true
+    }
+  },
+  "portable_model_sha256": "aece296a9ef4666c5fb6cdc0895aface80794c66552eeb4b96bb930f14704f9e",
+  "catalog_sha256": "4d8e178d841801ab66d85181dd7095dab4c8314a5c08e97f36b9544aceef275d",
+  "temporal_eligibility": {
+    "manual_record_state": "COMPLETE",
+    "PGAH_RMS20_min_Gal": 4.0,
+    "q05_min_post_t97p5_margin_s": 9.411757672956847,
+    "q95_max_t97p5_fraction": 0.9147811385234251,
+    "eligible_total": 1568,
+    "donor_eligible_total": 1568
+  },
+  "final_duration_clock": {
+    "architecture": {
+      "INSLAB": "RandomForest 512 trees; leaf15; Mw,Rrup,depth,Ts",
+      "INTERPLATE": "RandomForest 512 trees; leaf40; Mw training saturation at 7.3; Rrup,depth,Ts"
+    },
+    "n_estimators_per_source": 512,
+    "min_samples_leaf": {
+      "INSLAB": 15,
+      "INTERPLATE": 40
+    },
+    "target": "ln(D5_95_H_0p1_20Hz)",
+    "summary": {
+      "INSLAB": {
+        "n_eligible": 725,
+        "n_events": 18,
+        "oof_rmse_ln": 0.24164042611574327,
+        "oof_bias_ln": 0.0046324008456870135,
+        "oof_sigma_ln": 0.24159601899825017,
+        "oof_cv": 0.24516467371860048
+      },
+      "INTERPLATE": {
+        "n_eligible": 839,
+        "n_events": 23,
+        "oof_rmse_ln": 0.2008007599218968,
+        "oof_bias_ln": -0.001782370216069128,
+        "oof_sigma_ln": 0.20079284932891436,
+        "oof_cv": 0.20283383213961828
+      }
+    }
+  },
+  "hf_vertical_clock_summary": {
+    "INSLAB": {
+      "31": {
+        "n_eligible": 727,
+        "n_events": 18,
+        "oof_rmse_ln": 0.4227533276238202,
+        "oof_bias_ln": -0.024539744720212944
+      },
+      "32": {
+        "n_eligible": 727,
+        "n_events": 18,
+        "oof_rmse_ln": 0.43789645258641885,
+        "oof_bias_ln": -0.011745264048057504
+      },
+      "33": {
+        "n_eligible": 727,
+        "n_events": 18,
+        "oof_rmse_ln": 0.4511769906226128,
+        "oof_bias_ln": -0.010728707137041733
+      },
+      "34": {
+        "n_eligible": 727,
+        "n_events": 18,
+        "oof_rmse_ln": 0.46738136990176504,
+        "oof_bias_ln": 0.012090511044821143
+      },
+      "35": {
+        "n_eligible": 727,
+        "n_events": 18,
+        "oof_rmse_ln": 0.49491997740712296,
+        "oof_bias_ln": 0.007866842073921023
+      },
+      "36": {
+        "n_eligible": 727,
+        "n_events": 18,
+        "oof_rmse_ln": 0.5225269117946671,
+        "oof_bias_ln": 0.017616769822291614
+      },
+      "37": {
+        "n_eligible": 727,
+        "n_events": 18,
+        "oof_rmse_ln": 0.5264992101285059,
+        "oof_bias_ln": 0.038031749640350304
+      },
+      "38": {
+        "n_eligible": 727,
+        "n_events": 18,
+        "oof_rmse_ln": 0.49319589715426193,
+        "oof_bias_ln": 0.03311937908045072
+      }
+    },
+    "INTERPLATE": {
+      "31": {
+        "n_eligible": 841,
+        "n_events": 23,
+        "oof_rmse_ln": 0.39737406220643445,
+        "oof_bias_ln": 0.014410521478754337
+      },
+      "32": {
+        "n_eligible": 841,
+        "n_events": 23,
+        "oof_rmse_ln": 0.4165798212615091,
+        "oof_bias_ln": 0.013673927204601187
+      },
+      "33": {
+        "n_eligible": 841,
+        "n_events": 23,
+        "oof_rmse_ln": 0.40977175667782234,
+        "oof_bias_ln": 0.009420881183559106
+      },
+      "34": {
+        "n_eligible": 841,
+        "n_events": 23,
+        "oof_rmse_ln": 0.4071410030499081,
+        "oof_bias_ln": 0.0020821005895211736
+      },
+      "35": {
+        "n_eligible": 841,
+        "n_events": 23,
+        "oof_rmse_ln": 0.37930082390758985,
+        "oof_bias_ln": 0.00297549547191453
+      },
+      "36": {
+        "n_eligible": 841,
+        "n_events": 23,
+        "oof_rmse_ln": 0.3418268148540528,
+        "oof_bias_ln": -0.0036826224024173798
+      },
+      "37": {
+        "n_eligible": 841,
+        "n_events": 23,
+        "oof_rmse_ln": 0.3121682560382881,
+        "oof_bias_ln": -0.008046310030213404
+      },
+      "38": {
+        "n_eligible": 841,
+        "n_events": 23,
+        "oof_rmse_ln": 0.2870850930341469,
+        "oof_bias_ln": -0.01155288496816383
+      }
+    }
+  },
+  "selector_population": "temporal_donor_eligible=True",
+  "target_recovery_max_abs_residual": {
+    "INSLAB": 4.707345624410664e-14,
+    "INTERPLATE": 5.861977570020827e-14
+  },
+  "event_grouped_oof_5fold": [
+    {
+      "source": "INSLAB",
+      "training_records": 727,
+      "events": 18,
+      "leaf": 3,
+      "rmse_all54": 0.15259304987098146,
+      "zrmse_all54": 0.7951461216762065,
+      "rmse_logD": 0.19958397109458842,
+      "zrmse_logD": 0.5601792102365623,
+      "rmse_relative_time": 0.06971293929889019,
+      "zrmse_relative_time": 0.8934302122958973,
+      "rmse_persistence": 0.171995704547711,
+      "zrmse_persistence": 0.7678836672908267
+    },
+    {
+      "source": "INTERPLATE",
+      "training_records": 841,
+      "events": 23,
+      "leaf": 3,
+      "rmse_all54": 0.13641350852972878,
+      "zrmse_all54": 0.7499856262500793,
+      "rmse_logD": 0.19819414680732858,
+      "zrmse_logD": 0.6459472087568282,
+      "rmse_relative_time": 0.07129927090821968,
+      "zrmse_relative_time": 0.88272821159912,
+      "rmse_persistence": 0.15007130682337969,
+      "zrmse_persistence": 0.6958998154790543
+    }
+  ]
+}

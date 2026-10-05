@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use VALLIS-3C in research, please cite this software release."
+type: software
+title: "VALLIS-3C"
+version: "1.6.0"
+repository-code: "https://github.com/NoctStark/VALLIS-3C"
+authors:
+  - family-names: "Cruz-Arguelles"
+    given-names: "Joel D."
+    affiliation: "Instituto de Ingeniería, Universidad Nacional Autónoma de México"
+    email: "JCruzAr@iingen.unam.mx"
+    orcid: "https://orcid.org/0009-0002-6878-0173"
+abstract: >-
+  VALLIS-3C provides scenario- and site-conditioned stochastic simulation of
+  three-component ground motions at sites in the Basin of Mexico.
+license: GPL-3.0-only
+keywords:
+  - ground-motion simulation
+  - earthquake engineering
+  - Basin of Mexico
+  - stochastic simulation
+  - three-component ground motion

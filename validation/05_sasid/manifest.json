@@ -1,0 +1,103 @@
+{
+  "schema_version": 1,
+  "release_date": "2026-10-03",
+  "release": "VALLIS-3C 1.6.0",
+  "scope": "sasid",
+  "files": [
+    {
+      "name": "conditioned_SaT_scaling_factors_all_sites_sources_VALLIS.csv",
+      "size_bytes": 1156210,
+      "sha256": "00190281591324cfb31e842e9b4dbc5b74f34d1a3fd34673a04ce99b377707fe"
+    },
+    {
+      "name": "duration_detail_sasid_vallis.csv",
+      "size_bytes": 153122,
+      "sha256": "bfd2d3b29e92ec326a679f88ea0c6323868b28132e61255c02e0d7217377ce5a"
+    },
+    {
+      "name": "duration_suite_summary.csv",
+      "size_bytes": 12256,
+      "sha256": "db5a8f5411caf11c0f0bbc8b2c6b757c12b8768b681ff39a6301ff9a253ea655"
+    },
+    {
+      "name": "figure10_nonlinear_response.csv",
+      "size_bytes": 699055,
+      "sha256": "4accc5c6433a1ef071f677ace31f2436fe09a2c89c389519cc4730597a817cb7"
+    },
+    {
+      "name": "figure8_response_spectra.csv",
+      "size_bytes": 799429,
+      "sha256": "4e7e80f17bbd5071e3cf147d5cb15d2d14b5bfaa0a72219f276d19ef07d02655"
+    },
+    {
+      "name": "figure9_normalized_arias.npz",
+      "size_bytes": 640240,
+      "sha256": "1f7490a60f2fd90e97603d2c2c3a09de612455b3d5d0c72b52855db9a51ad093"
+    },
+    {
+      "name": "figure9_representative_ground_motions.npz",
+      "size_bytes": 2573426,
+      "sha256": "5247a63b447b823d36804da776aa472bc800ff9c1b4285d0818721e278f27847"
+    },
+    {
+      "name": "nested_duration_aggregate_summary.csv",
+      "size_bytes": 839,
+      "sha256": "eb1567d29eb647ed498681eae2cb6f90a64b2847981716a295bc370ebd03a37d"
+    },
+    {
+      "name": "nested_duration_bootstrap_summary.csv",
+      "size_bytes": 1477,
+      "sha256": "f910c3ae7590557551a0c3b18596e4676841e61091728ae6a6ad02a9e0a36cc8"
+    },
+    {
+      "name": "nested_duration_complete_event_balanced_report.json",
+      "size_bytes": 3185,
+      "sha256": "027b247da82a483f781c0bf515058fbe90d3e5bfba88f70fc6f86da800e49610"
+    },
+    {
+      "name": "nested_duration_summary.csv",
+      "size_bytes": 3059,
+      "sha256": "9c05062593e5b886772b34d83db36caa7f564d740d17450affcd512f5bebff87"
+    },
+    {
+      "name": "nonlinear_Umax_EH_percentiles_SASID_Q2_Q3_Q4.csv",
+      "size_bytes": 1350390,
+      "sha256": "f22ff741fb5b394096f1dbf1b6005a1dc07a50222ca260543a5f6d379e888629"
+    },
+    {
+      "name": "nonlinear_Umax_EH_percentiles_VALLIS_Q2_Q3_Q4.csv",
+      "size_bytes": 1362103,
+      "sha256": "e270ee931d8304058bb2108e8230ec758cbde17969667bf7ee4aae7b31e9a8bc"
+    },
+    {
+      "name": "observed_event_level_nested_duration.csv",
+      "size_bytes": 11142,
+      "sha256": "875c2a3b453523ba5558173af852178aafe81013f6b0cf89a036f3b3afe66c54"
+    },
+    {
+      "name": "README.md",
+      "size_bytes": 3061,
+      "sha256": "35f56f9a8b9ad97a7b657cc47cf2ca5da0eb62cf68562ea43addb4021d292702"
+    },
+    {
+      "name": "representative_ground_motion_fas.csv",
+      "size_bytes": 1275606,
+      "sha256": "ba048e8e3f1690eba77556597d610ba45895f4412e2607896d6f65e27e0abae7"
+    },
+    {
+      "name": "sasid_vallis_duration_pga.csv",
+      "size_bytes": 19663,
+      "sha256": "c7bb8281da300ea5f2926ecef59100a9f6f3ee57389c9c2d217576f8492bf854"
+    },
+    {
+      "name": "spectral_sigma_lnSa_summary.csv",
+      "size_bytes": 1380,
+      "sha256": "1bd2b75bc3390658b7d7869cb06797979898c9e30a753b6500f9bf95a711f6ea"
+    },
+    {
+      "name": "table2_summary.csv",
+      "size_bytes": 2830,
+      "sha256": "83c29f1959cfbd2978c297cad30d01d3ba17b7fdb6a5ffd89cabd659fd15ae51"
+    }
+  ]
+}

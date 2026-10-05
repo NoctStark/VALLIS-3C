@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "records": 1629,
+  "selection_scope": "union of records reachable by the three distributed selector variants",
+  "selector_population_records": {
+    "full": 1623,
+    "oos_2017": 1568,
+    "oos_2012_2017": 1515
+  },
+  "source_records": 2226,
+  "unreachable_records_removed": 597,
+  "maximum_local_probability_sum_error": 4.845830425814768e-08,
+  "maximum_interval_mass_error": 5.551115123125783e-17,
+  "released_bytes": 426520923,
+  "released_gib": 0.39722856413573027,
+  "source_compact_bytes": 475784934,
+  "size_fraction_of_source_compact": 0.8964573960217076
+}

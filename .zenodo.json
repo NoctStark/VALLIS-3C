@@ -1,0 +1,22 @@
+{
+  "title": "VALLIS-3C",
+  "description": "Scenario- and site-conditioned stochastic simulation of three-component ground motions at sites in the Basin of Mexico. The software release includes the fitted models and processed research artifacts required to run and audit VALLIS-3C; original RAII-UNAM and RACM/CIRES ground-motion recordings are not included.",
+  "upload_type": "software",
+  "access_right": "open",
+  "license": "GPL-3.0-only",
+  "version": "1.6.0",
+  "creators": [
+    {
+      "name": "Cruz-Arguelles, Joel D.",
+      "affiliation": "Instituto de Ingeniería, Universidad Nacional Autónoma de México",
+      "orcid": "0009-0002-6878-0173"
+    }
+  ],
+  "keywords": [
+    "ground-motion simulation",
+    "earthquake engineering",
+    "Basin of Mexico",
+    "stochastic simulation",
+    "three-component ground motion"
+  ]
+}

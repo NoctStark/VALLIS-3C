@@ -1,0 +1,63 @@
+{
+  "schema_version": 1,
+  "release_date": "2026-10-03",
+  "release": "VALLIS-3C 1.6.0",
+  "scope": "oos2017",
+  "files": [
+    {
+      "name": "AU46_spectral_curves.csv",
+      "size_bytes": 82114,
+      "sha256": "dbd16fcf7dfad2a0ea20bab0497f32329f381bb2d85e0b44e23d3b91a15d2e2c"
+    },
+    {
+      "name": "GC38_spectral_curves.csv",
+      "size_bytes": 82137,
+      "sha256": "9479a3a7c69bccd41fd225d03c0bca3658d1c97684d9dbdab623cba35ee97bf8"
+    },
+    {
+      "name": "network_metrics_bootstrap_summary.csv",
+      "size_bytes": 1502,
+      "sha256": "a9ce70606c6215fa45c3ee132a8cb4cd0f690cddf4b8afc294bce54c8a354a6b"
+    },
+    {
+      "name": "network_metrics.csv",
+      "size_bytes": 49175,
+      "sha256": "ac9ec804c3e8c0f8f9a039cb21369df7c2e7b98dacf84bba3addaade6328ed5e"
+    },
+    {
+      "name": "oos2017_durations.csv",
+      "size_bytes": 22275,
+      "sha256": "6d4c2c11f7c075d3b9be0e7e23c24cee8628c52a993727ef14bf54a1d8c15811"
+    },
+    {
+      "name": "oos2017_generated_ground_motions.npz",
+      "size_bytes": 17304129,
+      "sha256": "91c1fa09375d716208297777f41612c099325165842310ac239db14764042a15"
+    },
+    {
+      "name": "oos2017_spectral_all_realizations.csv",
+      "size_bytes": 4172093,
+      "sha256": "d051a39b6e4db09b9016e9e8a1667628af60edf9c2557a549d1c7bfb82a27369"
+    },
+    {
+      "name": "oos2017_spectral_summary.csv",
+      "size_bytes": 246246,
+      "sha256": "9a6eb8cfaf62cf5dae0073950edc3d570471b28c96c9a94f8be81d91171942f7"
+    },
+    {
+      "name": "README.md",
+      "size_bytes": 2360,
+      "sha256": "84ebd42cc57f7989c01dfaac2f0aaf8c71f95b498ca2fbc6707363e92b54ca19"
+    },
+    {
+      "name": "station_hysteretic_energy_q3.csv",
+      "size_bytes": 13428,
+      "sha256": "e85255486e0eb842d7b9bc865a5567f2ba940836e92e5fec44b489464c3d0fb8"
+    },
+    {
+      "name": "TCYA_spectral_curves.csv",
+      "size_bytes": 82151,
+      "sha256": "f5b79a334a475e92de7e19c1bcb52b64f4e9a7b1d3e957ba5564c5ff849bffe0"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+variant,n_records,n_events,n_stations,texture_profile_rmse,peak_corr,peak_mae,u_support_min,u_full_min,u_full_max,u_support_max,interpolation,no_extrapolation,excluded_event
+FULL,2224,76,72,0.1539981713086885,0.8715541693768338,0.14521821326026962,0.35,0.50,3.0,4.0,KNN_XY_lnTs,true,
+OOS2017,2165,75,72,0.15377474757595255,0.8735499532932663,0.1448523830933521,0.35,0.50,3.0,4.0,KNN_XY_lnTs,true,2017-09-19
+OOS2012_2017,2110,74,72,0.15333400594024862,0.8738468712446608,0.14556153899422053,0.35,0.50,3.0,4.0,KNN_XY_lnTs,true,2012-03-20;2017-09-19

@@ -1,0 +1,15 @@
+{
+  "version": "1.6.0",
+  "policy": "warn_and_require_explicit_acceptance",
+  "source_types": ["INSLAB", "INTERPLATE"],
+  "ranges": {
+    "Mw": [5.2, 8.2],
+    "Rrup_km": [91.0, 583.0],
+    "depth_used_km": [3.54, 69.89],
+    "Ts_s": [0.5, 5.79],
+    "source_path_theta_deg": [0.0, 150.0],
+    "event_longitude": [-104.67, -94.11],
+    "event_latitude": [14.85, 18.86]
+  },
+  "basis": "Observed FULL calibration ranges stored in models/release/runtime/descriptor_metadata.json; site support is the training hull in config/spatial_conditioning.json."
+}

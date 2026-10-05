@@ -1,0 +1,10 @@
+method,metric,point_estimate,bootstrap_p025,bootstrap_p975,bootstrap_unit,n_bootstrap
+SASID,ratio_D5_95_D5_75,1.368178076384547,1.349351183728103,1.3793966041084071,realization within case; aggregate median across 8 cases,10000
+VALLIS,ratio_D5_95_D5_75,2.021745382692676,1.9505415419931742,2.0914197196751405,realization within case; aggregate median across 8 cases,10000
+Observed complete/event-balanced,ratio_D5_95_D5_75,2.027080173794495,1.9655707856382298,2.124617834548375,earthquake within case; aggregate median across 8 cases,10000
+SASID,ratio_D2p5_97p5_D5_95,1.1787250791662758,1.1643081163373616,1.1953323024105063,realization within case; aggregate median across 8 cases,10000
+VALLIS,ratio_D2p5_97p5_D5_95,1.2993507330239689,1.2656744408595941,1.3245579823545075,realization within case; aggregate median across 8 cases,10000
+Observed complete/event-balanced,ratio_D2p5_97p5_D5_95,1.303432764089066,1.2810803483821362,1.3226739080458008,earthquake within case; aggregate median across 8 cases,10000
+SASID,ratio_D2p5_97p5_D5_75,1.5921644859443536,1.5696490846466653,1.6041662506714651,realization within case; aggregate median across 8 cases,10000
+VALLIS,ratio_D2p5_97p5_D5_75,2.629230483050071,2.513842400936068,2.734429602255523,realization within case; aggregate median across 8 cases,10000
+Observed complete/event-balanced,ratio_D2p5_97p5_D5_75,2.6461219464247234,2.536552245909622,2.7795733910638956,earthquake within case; aggregate median across 8 cases,10000

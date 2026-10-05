@@ -1,0 +1,92 @@
+{
+  "model_version": "1.6.0",
+  "training_records": 2072,
+  "training_events": 48,
+  "active_band_centers_hz": [
+    0.2073521778260274,
+    0.2360236585393669,
+    0.268659668658253,
+    0.3058084007774312,
+    0.3480938484481272,
+    0.3962262875035121,
+    0.4510142066822856,
+    0.5133778879510826,
+    0.5843648646366819,
+    0.6651675170208846,
+    0.7571431009542516,
+    0.8618365459127207,
+    0.9810064054399258,
+    1.1166543958691963,
+    1.2710590194921594,
+    1.446813836948006,
+    1.6468710317012338,
+    1.8745909983677835,
+    2.2116460340604704,
+    2.445689089987704,
+    2.7044992882081327,
+    2.990697562442441,
+    3.307182201525071,
+    3.657158199959149,
+    4.04416971443569,
+    4.47213595499958,
+    4.945390874327027,
+    5.468727057042106,
+    6.047444253533181,
+    6.68740304976422,
+    7.395084216587466,
+    8.177654339579425,
+    9.043038394024116,
+    10.0
+  ],
+  "components": [
+    "major",
+    "intermediate",
+    "vertical"
+  ],
+  "output_layout": "[major bands, intermediate bands, vertical bands]",
+  "feature_transform": "Rrup -> log1p; Ts -> log; source_type -> is_inslab",
+  "selection": "geo bundle when event_longitude/event_latitude are available; core otherwise",
+  "timing_origin": "tE_abs = t1_H_local + tE_rel; tpeak_abs = t1_H_local + tpeak_rel; no arbitrary common shift",
+  "algorithms": {
+    "tE_rel_s": "ExtraTrees multioutput",
+    "log_sigma_s": "ExtraTrees multioutput",
+    "tpeak_rel_s": "ExtraTrees multioutput",
+    "log_C2_rate": "LightGBM long-form functional frequency model",
+    "t1_H_local_s": "ExtraTrees scalar"
+  },
+  "event_balanced_training": true,
+  "training_ranges": {
+    "Mw": [
+      5.2,
+      8.2
+    ],
+    "Rrup_km": [
+      91.0,
+      583.0
+    ],
+    "depth_used_km": [
+      3.54,
+      69.89
+    ],
+    "Ts_s": [
+      0.5,
+      5.79
+    ],
+    "x_conditioned_km": [
+      -13.125132,
+      5.290781
+    ],
+    "y_conditioned_km": [
+      -12.669528,
+      6.6850424
+    ],
+    "event_longitude": [
+      -104.67,
+      -94.11
+    ],
+    "event_latitude": [
+      14.85,
+      18.86
+    ]
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "software_name": "VALLIS-3C",
+  "version": "1.6.0",
+  "description": "VALLIS-3C 1.6.0 — ground-motion simulation at sites in the Basin of Mexico",
+  "repository": "https://github.com/NoctStark/VALLIS-3C",
+  "author": "Joel D. Cruz-Arguelles",
+  "affiliation": "Instituto de Ingeniería, Universidad Nacional Autónoma de México, Coyoacán, 04510 Ciudad de México, México",
+  "emails": [
+    "JCruzAr@iingen.unam.mx",
+    "joeldan.cruz@gmail.com"
+  ],
+  "year": 2026,
+  "license": "GPL-3.0-only",
+  "carrier_representation": "vallis3c.phase_diffusion.texture_carrier.v1",
+  "acceleration_sample_arrays_distributed": false,
+  "license_file": "LICENSE",
+  "data_provenance": "DATA_PROVENANCE.md",
+  "disclaimer": "DISCLAIMER.md",
+  "citation_file": "CITATION.cff",
+  "archive_metadata": ".zenodo.json",
+  "acceleration_units": "cm/s2",
+  "fas_units": "cm/s",
+  "fas_smoothing": "Konno-Ohmachi, 320 logarithmically spaced output frequencies using all native FFT ordinates in band",
+  "response_spectrum_damping_ratio": 0.05,
+  "supported_python": "64-bit CPython >=3.12,<3.15",
+  "reference_python": "CPython 3.12.10",
+  "default_zero_padding_s": 20.0,
+  "production_carrier": "phase_diffusion",
+  "texture_selector_artifact": "selector_portable.npz",
+  "texture_selector_training_records": 1623,
+  "texture_selector_min_samples_leaf": 3,
+  "orcid": "0009-0002-6878-0173",
+  "release_status": "stable",
+  "raw_ground_motion_recordings_distributed": false,
+  "ground_motion_sources": [
+    "RAII-UNAM",
+    "RACM/CIRES"
+  ]
+}

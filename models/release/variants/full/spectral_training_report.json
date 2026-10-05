@@ -1,0 +1,213 @@
+{
+  "model_version": "1.6.0",
+  "architecture_id": "gm_parametric_3c.fas.vallis3c",
+  "author_metadata": {
+    "author": "Joel D. Cruz-Arguelles",
+    "institution": "Instituto de Ingeniería, Universidad Nacional Autónoma de México, Coyoacán, 04510 Ciudad de México, México",
+    "emails": [
+      "JCruzAr@iingen.unam.mx",
+      "joeldan.cruz@gmail.com"
+    ],
+    "year": 2026,
+    "orcid": "0009-0002-6878-0173"
+  },
+  "training_data": {
+    "horizontal_sha256": "ce041e06635eb78923a12cebb9b31ca9782659c10511c2e3d8e8748f3d35239d",
+    "vertical": "fas_observed_vertical.csv",
+    "vertical_sha256": "607282aee46df62bc95131b1f713adbfb3126cbf7aab4f3bff36759801618b7d"
+  },
+  "excluded_event_ids": [],
+  "training_records": 2224,
+  "training_events": 76,
+  "CU_events": 68,
+  "CU_events_by_source": {
+    "INTERPLATE": 44,
+    "INSLAB": 24
+  },
+  "frequency_range_hz": [
+    0.1,
+    20.0
+  ],
+  "horizontal_definition": "EAS=sqrt((Major^2+Intermediate^2)/2)",
+  "phi": "sqrt(f)/sqrt(mean(f[0.1,10]))",
+  "source_models": {
+    "INTERPLATE": {
+      "prior": "none",
+      "kernel": {
+        "l_Mw": 0.3,
+        "l_logR": 0.5,
+        "l_Ztor_km": 10.0,
+        "var_local": 0.1,
+        "var_theta": 0.1,
+        "linear_ridge_scale": 0.5,
+        "l_theta_rad": 0.8,
+        "periodic_center": 0.35844525508684205,
+        "periodic_denom": 0.641554744913158
+      }
+    },
+    "INSLAB": {
+      "prior": "garcia04_omega2",
+      "kernel": {
+        "l_Mw": 0.5,
+        "l_logR": 0.5,
+        "l_Ztor_km": 20.0,
+        "var_local": 1.0,
+        "var_theta": 3.0,
+        "linear_ridge_scale": 0.2,
+        "l_theta_rad": 0.8,
+        "periodic_center": 0.35844525508684205,
+        "periodic_denom": 0.641554744913158
+      }
+    }
+  },
+  "CU_OOF_pooled_rmse_logEAS": 0.6210041227665672,
+  "event_residual": {
+    "modes": 7,
+    "variance_explained": 0.9156023780817715,
+    "dfs": [
+      55.87054326159594,
+      8.421245160149251,
+      6.117754352914936,
+      200.0,
+      200.0,
+      7.772149602202402,
+      28.275930914172093
+    ]
+  },
+  "record_residual": {
+    "modes": 11,
+    "variance_explained": 0.9070203044119939,
+    "dfs": [
+      4.219241076456264,
+      3.701627899619841,
+      6.635405979419467,
+      4.696713369730531,
+      7.665012402070904,
+      5.535833733109758,
+      8.36884553504646,
+      5.480734990519668,
+      9.618223736441337,
+      31.669404358483945,
+      39.667402444796146
+    ]
+  },
+  "ratio_training_records": 2195,
+  "ratio_training_events": 47,
+  "delta_layer": {
+    "residual_modes": 12,
+    "variance_explained": 0.9202121148541059
+  },
+  "vh_layer": {
+    "residual_modes": 13,
+    "variance_explained": 0.9286860517346415
+  },
+  "angular_missing_policy": "centered periodic field contributes zero when source azimuth/event coordinates are unavailable",
+  "elapsed_s": 28.62421941757202,
+  "release_provenance": {
+    "architecture_id": "gm_parametric_3c.fas.vallis3c",
+    "schema_version": "1.6.0",
+    "excluded_event_ids": [],
+    "external_artifact_inputs": [],
+    "training_data_files": [
+      "fas_observed_vertical.csv"
+    ],
+    "training_data_sha256": {
+      "horizontal_training_snapshot_sha256": "ce041e06635eb78923a12cebb9b31ca9782659c10511c2e3d8e8748f3d35239d",
+      "fas_observed_vertical.csv": "607282aee46df62bc95131b1f713adbfb3126cbf7aab4f3bff36759801618b7d"
+    },
+    "self_contained_release_artifacts": true,
+    "population_policy": "all cleaned observed records with finite Ts; residual eligibility evaluated separately by source"
+  },
+  "training_population_note": "2225 cleaned observed records exist; one record (2025-08-02/LI58) has missing Ts_s and is not eligible for this conditional model.",
+  "artifact_family": "VALLIS-3C",
+  "embedded_site_texture": {
+    "architecture_id": "gm_parametric_3c.resonance_texture.core",
+    "schema_version": "1.6.0",
+    "model_version": "1.6.0",
+    "excluded_event_ids": [],
+    "n_stations": 63,
+    "n_residual_records": 1912,
+    "u_grid": [
+      0.35,
+      4.0,
+      64
+    ],
+    "u_window": [
+      0.35,
+      0.5,
+      3.0,
+      4.0
+    ],
+    "station_loso": {
+      "rmse_profile": 0.1489995341975469,
+      "peak_corr": 0.8584434577424526,
+      "peak_mae": 0.14079299075439822
+    },
+    "defaults": {
+      "site_strength": 1.0,
+      "residual_scale": 1.0
+    },
+    "provenance": {
+      "architecture_id": "gm_parametric_3c.resonance_texture.core",
+      "schema_version": "1.6.0",
+      "excluded_event_ids": [],
+      "external_artifact_inputs": [],
+      "training_data_files": [],
+      "training_data_sha256": {
+        "horizontal_training_snapshot_sha256": "ce041e06635eb78923a12cebb9b31ca9782659c10511c2e3d8e8748f3d35239d"
+      },
+      "self_contained_release_artifacts": true,
+      "notes": [
+        "Coordinates are trained and queried in the conditioned XY system.",
+        "Texture is fitted directly from observed horizontal log-FAS high-pass structure; no learned release artifact is loaded.",
+        "The normalized-frequency window is [0.35,0.50,3.0,4.0] and is supported by LOSO/OOS tests.",
+        "The residual layer is centered by the weighted conditional median on the model frequency grid; the persistent local spectral departure is the conditional P50.",
+        "The normalized-frequency texture window is [0.35,0.50,3.0,4.0]."
+      ],
+      "u_window": [
+        0.35,
+        0.5,
+        3.0,
+        4.0
+      ],
+      "u_grid": [
+        0.35,
+        4.0,
+        64
+      ]
+    }
+  },
+  "site_texture_residual_centering": "conditional_weighted_median_final_frequency_grid",
+  "site_texture_map_quantiles": "exact_conditional_empirical",
+  "site_texture_u_window": [
+    0.35,
+    0.5,
+    3.0,
+    4.0
+  ],
+  "site_texture": {
+    "model_version": "1.6.0",
+    "schema_version": "1.6.0",
+    "n_records": 2224,
+    "n_events": 76,
+    "n_stations": 72,
+    "Ts_station_median_range_s": [
+      0.5,
+      5.04
+    ],
+    "u_grid": [
+      0.35,
+      4.0,
+      64
+    ],
+    "partial_support": true,
+    "u_window": [
+      0.35,
+      0.5,
+      3.0,
+      4.0
+    ],
+    "production_site_state": "Ts_conditioned_population_plus_XY_Ts_persistent_texture",
+    "calendar_year_used": false
+  }
+}

@@ -1,0 +1,9 @@
+__pycache__/
+*.py[cod]
+.venv/
+outputs/*
+!outputs/.gitkeep
+VALLIS-3C_v*.zip
+validation/backup_*/
+validation/**/*.zip
+backup_*/
