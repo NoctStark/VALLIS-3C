@@ -1,5 +1,6 @@
 # VALLIS-3C 1.6.0
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23170877.svg)](https://doi.org/10.5281/zenodo.23170877)
 
 Self-contained software for three-component ground-motion simulation at sites in the Basin of Mexico.
 
@@ -30,6 +31,8 @@ VALLIS-3C 1.6.0 is the public software release of the method described in the co
 The VALLIS-3C software is released under GPL-3.0-only.
 
 Repository: [github.com/NoctStark/VALLIS-3C](https://github.com/NoctStark/VALLIS-3C)
+
+Archived release 1.6.0: [doi:10.5281/zenodo.23170878](https://doi.org/10.5281/zenodo.23170878)
 
 
 ## Scientific workflow
